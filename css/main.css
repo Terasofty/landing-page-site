@@ -1,7 +1,24 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.loguito img{
+    width: 90%;
+}
+.esp-content img {
+    width: 20%;
+    margin-bottom: 15px;
+}
+.button-action {
+    background-color: rgba(46, 46, 46, 1);   
+}
+
 .navbar {
     box-shadow: 2px 2px 5px #000;
 }
-
 .main-header {
     position: relative;
     background: url(../img/Imagen02.jpg);
@@ -17,7 +34,7 @@
 
 .main-header3 {
     background: url(../img/Imagen03.jpg);
-    background-size: cover;    
+    background-size: cover;
     min-height: 800px;
 }
 
@@ -29,6 +46,25 @@
 
 .main-header5 {
     background: url(../img/Imagen05.jpg);
-    background-size: cover;    
+    background-size: cover;
     min-height: 600px;
+}
+
+.esp-header {
+    background-color: rgba(46, 46, 46, 1);
+    color: white;
+}
+
+@media (max-width: 750px) {
+    .loguito {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .loguito img{
+        max-width: 70%;
+    }
+    .esp-content img {
+        width: 100%;
+    }
 }
